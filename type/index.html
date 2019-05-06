@@ -1,0 +1,52 @@
+<html>
+<head>
+	<title>Illusion</title>
+  	<script src="jquery-3.2.0.min.js"></script>
+  	<script src="init.js"></script>
+  	<link rel="stylesheet" type="text/css" href="style.css">
+  	<link href="https://fonts.googleapis.com/css?family=Limelight" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+
+  	<script type="text/javascript">
+  		function showInformation() {
+  			var element = document.getElementById('information');
+
+  			if (element.style.display == 'none') {
+  				element.style.display = 'block';
+
+  			} else {
+  				element.style.display = 'none';
+  			}
+  		}
+  	</script>
+
+
+</head>
+<body>
+<div class="box">
+	<div id="container" class="input" >
+			<span id="cursor">|</span>
+	</div>
+</div>
+<div class="title">
+	<div class="information" id="information" style="display: none;">
+		<p>
+			Creating simple illusions to shed light on how the brain perceives patterns and shapes, and how our eyes can play tricks on our mind. By using digital format, this Art Deco influenced typeface revealed that our brain makes jugements about color using adjacent objects - and this can be manipulated.
+		</p>
+		<p>
+			All the letterforms are designed based on geometric shanpes in three layers: white, black, and horizontal stripe layer. When the typeface was placed, a part of the letterform would be concealed based on different background.
+		</p>
+		<p style='text-align: center;'>
+			Design by Jin Qian
+		</p>
+	</div>
+
+</div>
+<div class="titlebox" id="titlebox" onmouseover="showInformation()" onmouseout="showInformation()">
+	About
+</div>
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+</body>
+
+</html>
